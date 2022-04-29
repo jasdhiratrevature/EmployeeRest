@@ -23,11 +23,11 @@ pipeline {
         stage('DockerBuild') {
       steps {
         sh 'docker build -t jasdhir/emp-rest:latest .'
-      }git 
+      }
         }
          stage('DockerRun') {
       steps {
-        sh 'docker run  -p 9090:9090 jasdhir/emp-rest'
+        sh 'docker run -p 9090:9090 jasdhir/emp-rest'
       }
         }
   }
