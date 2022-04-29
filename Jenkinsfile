@@ -27,7 +27,7 @@ pipeline {
         }
          stage('DockerRun') {
       steps {
-        sh 'docker run -p 9090:9090 jasdhir/emp-rest'
+        sh 'docker run -e JPA_URL -e JPA_DB -e JPA_USER -e JPA_PWD -p 9090:9090 jasdhir/emp-rest'
       }
         }
   }
