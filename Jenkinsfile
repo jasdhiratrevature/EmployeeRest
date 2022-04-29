@@ -5,7 +5,7 @@ pipeline {
     stage('Checkout') {
       steps {
         // Get some code from a GitHub repository
-        git branch: "main", url: 'https://github.com/jaslearn/EmployeeREST.git'
+        git branch: "main", url: 'https://github.com/jasdhiratrevature/EmployeeRest.git'
       }
     }
         stage('Build') {
