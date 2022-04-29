@@ -25,10 +25,6 @@ pipeline {
         sh 'docker build -t jasdhir/emp-rest:latest .'
       }
         }
-         stage('DockerRun') {
-      steps {
-        sh 'docker run -e JPA_URL -e JPA_DB -e JPA_USER -e JPA_PWD -p 9090:9090 jasdhir/emp-rest'
-      }
-        }
+         
   }
 }
