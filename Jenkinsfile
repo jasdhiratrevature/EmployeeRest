@@ -27,7 +27,7 @@ pipeline {
         }
          stage('DockerRun') {
       steps {
-        sh 'docker run -d --rm -p 9090:9090 jasdhir/emp-rest'
+        sh 'docker run  --rm -p 9090:9090 jasdhir/emp-rest'
       }
         }
   }
